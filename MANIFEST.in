@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include bloomvalley *.css
+recursive-include bloomvalley *.csv
+recursive-include bloomvalley *.html
+recursive-include bloomvalley *.ico
+recursive-include bloomvalley *.js
+recursive-include bloomvalley *.json
+recursive-include bloomvalley *.md
+recursive-include bloomvalley *.png
+recursive-include bloomvalley *.py
+recursive-include bloomvalley *.svg
+recursive-include bloomvalley *.txt
+recursive-exclude bloomvalley *.pyc
