@@ -76,6 +76,8 @@ H2 {
     border-radius: $v-radius;
     background-color: #fff;
     width: 100%;
+    overflow: auto;
+    max-height: 95vh;
 
     .btn-close {
         float: right;
