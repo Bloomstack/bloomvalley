@@ -1,0 +1,11 @@
+{
+  "js/bloomvalley.js": [
+    "public/js/cart_utils.js",
+    "public/js/dom_utils.js"
+  ],
+  "css/bloomvalley.css": [
+    "public/scss/common.scss",
+    "public/scss/forms.scss",
+    "public/scss/icons.scss"
+  ]
+}

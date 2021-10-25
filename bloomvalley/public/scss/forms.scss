@@ -1,0 +1,25 @@
+@import './variables';
+
+.bvform {
+    label {
+        color: #061423;
+        font-weight: 600;
+
+        &:not(.compact) {
+            display: block;
+            >INPUT {
+                margin-top: 1rem;
+                display: block;
+                border: none;
+                background-color: #FAFAFA;
+                border-radius: $v-radius;
+                padding: 0.875rem 1rem;
+                width: 100%;
+        
+                &:invalid {
+                    box-shadow: inset 0 0 5px 0px #ec6363;
+                }
+            }
+        }
+    }
+}

@@ -19,8 +19,8 @@ app_license = "GPL v3"
 # app_include_js = "/assets/bloomvalley/js/bloomvalley.js"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/bloomvalley/css/bloomvalley.css"
-# web_include_js = "/assets/bloomvalley/js/bloomvalley.js"
+web_include_css = "/assets/css/bloomvalley.css"
+web_include_js = "/assets/js/bloomvalley.js"
 
 # include js, css files in header of web form
 # webform_include_js = {"doctype": "public/js/doctype.js"}
