@@ -1,6 +1,7 @@
 import frappe
 import json
 
+from frappe import _
 from frappe.utils import nowdate
 from frappe.integrations.utils import get_payment_gateway_controller
 
@@ -55,7 +56,12 @@ def checkout_one(item_code, contact_info, coupon_code = "", sales_order_name=Non
 	so.customer = customer_name
 
 	if coupon_code:
-		so.coupon_code = coupon_code
+		coupons = frappe.get_all("Coupon Code", filters={"coupon_code": coupon_code})
+
+		if len(coupons) > 0:
+			so.coupon_code = coupons[0].get("name")
+		else:
+			frappe.throw(_("Invalid Coupon Code"))
 
 	so.update(custom_fields)
 
