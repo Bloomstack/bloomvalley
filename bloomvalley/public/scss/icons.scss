@@ -1,0 +1,31 @@
+i.tent {
+    background-image: url('/assets/bloomvalley/icons/tent.svg');
+    background-color: rgba(#6F7512, .1);
+}
+i.bag {
+    background-image: url('/assets/bloomvalley/icons/bag.svg');
+    background-color: rgba(#6F7512, .1);
+}
+i.calendar {
+    background-image: url('/assets/bloomvalley/icons/calendar.svg');
+    background-color: rgba(#596235, .1);
+}
+i.food {
+    background-image: url('/assets/bloomvalley/icons/food.svg');
+    background-color: rgba(#DA6846, .1);
+}
+i.pin {
+    background-image: url('/assets/bloomvalley/icons/pin.svg');
+    background-color: rgba(#DA6846, .1);
+}
+i.icon {
+    width: 2rem;
+    min-width: 2rem;
+    height: 2rem;
+    display: inline-block;
+    border-radius: 2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 33%;
+    margin-right: 1rem;
+}
