@@ -38,6 +38,7 @@ def checkout_one(item_code, contact_info, coupon_code = "", sales_order_name=Non
 		customer = frappe.new_doc("Customer")
 		customer.territory = "India"
 		customer.customer_group = "Individual"
+		customer.customer_type = "Individual"
 		customer.customer_primary_contact = contact_name
 		customer.customer_name = customer_full_name
 		customer.email_id = contact_info.get("email_id")
