@@ -36,6 +36,8 @@ def checkout_one(item_code, contact_info, coupon_code = "", sales_order_name=Non
 	customer_name = find_customer_by_contact(contact_name)
 	if not customer_name:
 		customer = frappe.new_doc("Customer")
+		customer.territory = "India"
+		customer.customer_group = "Individual"
 		customer.customer_primary_contact = contact_name
 		customer.customer_name = customer_full_name
 		customer.email_id = contact_info.get("email_id")
