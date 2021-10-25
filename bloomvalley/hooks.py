@@ -90,6 +90,12 @@ web_include_js = "/assets/js/bloomvalley.js"
 # 		"on_trash": "method"
 #	}
 # }
+doc_events = {
+    "Sales Order": {
+        "on_payment_authorized": "bloomvalley.overrides.sales_order.on_payment_authorized",
+        "set_as_paid": "bloomvalley.overrides.sales_order.set_as_paid"
+    }
+}
 
 # Scheduled Tasks
 # ---------------
@@ -130,8 +136,6 @@ web_include_js = "/assets/js/bloomvalley.js"
 # override_doctype_dashboards = {
 # 	"Task": "bloomvalley.task.get_dashboard_data"
 # }
-
-
 
 # Exempt doctype for cancel
 # -----------------------
